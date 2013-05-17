@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/help" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Người chơi sẽ điểu khiển nhân vật để vượt qua các vật cản, nếu nhân vât đụng vào các con yêu quái sẽ bị chết và bị trừ một mạng. Vượt qua được các chướng ngại vật và về đến đích sẽ được cộng điểm"
+        android:textColor="#CC3300"
+        android:textSize="20sp" />
+
+     <Button
+         android:id="@+id/ok"
+         style="@style/txt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="20dp"
+         android:background="@drawable/click_button_min"
+         android:text="Ok" />
+
+</RelativeLayout>
