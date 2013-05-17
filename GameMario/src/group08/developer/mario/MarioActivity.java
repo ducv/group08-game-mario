@@ -1,7 +1,11 @@
 package group08.developer.mario;
 
-import android.os.Bundle;
+import group08.developer.mario.main.HelpActivity;
+import group08.developer.mario.main.StartActivity;
+import group08.developer.mario.main.OptionActivity;
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -37,37 +41,36 @@ public class MarioActivity extends Activity implements OnClickListener {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.mario, menu);
 		return true;
 	}
 
 	@Override
 	public void onClick(View v) {
-//		switch (v.getId()) {
-//		case R.id.start:
-//			Intent start = new Intent(getApplicationContext(),
-//					StartActivity.class);
-//			startActivity(start);
-//			break;
-//		case R.id.opption:
-//			Intent opption = new Intent(getApplicationContext(),
-//					OpptionActivity.class);
-//			startActivity(opption);
-//			break;
-//		case R.id.help:
-//			Intent help = new Intent(getApplicationContext(),
-//					HelpActivity.class);
-//			startActivity(help);
-//			break;
-//		case R.id.exit:
-//			finish();
-//			System.exit(0);
-//			break;
-//
-//		default:
-//			break;
-//		}
+		switch (v.getId()) {
+		case R.id.start:
+			Intent start = new Intent(getApplicationContext(),
+					StartActivity.class);
+			startActivity(start);
+			break;
+		case R.id.opption:
+			Intent opption = new Intent(getApplicationContext(),
+					OptionActivity.class);
+			startActivity(opption);
+			break;
+		case R.id.help:
+			Intent help = new Intent(getApplicationContext(),
+					HelpActivity.class);
+			startActivity(help);
+			break;
+		case R.id.exit:
+			finish();
+			System.exit(0);
+			break;
+
+		default:
+			break;
+		}
 
 	}
 

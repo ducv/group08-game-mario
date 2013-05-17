@@ -1,5 +1,6 @@
 package group08.developer.mario.main;
 
+import group08.developer.mario.MarioActivity;
 import group08.developer.mario.R;
 import android.os.Bundle;
 import android.app.Activity;
@@ -29,16 +30,16 @@ public class StartActivity extends Activity implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
-//		switch (v.getId()) {
-//		case R.id.mainmenu:
-//			Intent main = new Intent(getApplicationContext(),
-//					MainActivity.class);
-//			startActivity(main);
-//			break;
-//
-//		default:
-//			break;
-//		}
+		switch (v.getId()) {
+		case R.id.mainmenu:
+			Intent main = new Intent(getApplicationContext(),
+					MarioActivity.class);
+			startActivity(main);
+			break;
+
+		default:
+			break;
+		}
 
 	}
 
