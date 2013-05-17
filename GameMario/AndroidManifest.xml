@@ -31,6 +31,10 @@
             android:name="group08.developer.mario.main.OptionActivity"
             android:label="@string/title_activity_option" >
         </activity>
+        <activity
+            android:name="group08.developer.mario.main.StartActivity"
+            android:label="@string/title_activity_start" >
+        </activity>
     </application>
 
 </manifest>
