@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hinhnen"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/opption"
+        style="@style/txt"
+        android:layout_width="110sp"
+        android:layout_height="35sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/start"
+        android:background="@drawable/click_button_max"
+        android:text="@string/option" />
+
+    <Button
+        android:id="@+id/exit"
+        style="@style/txt"
+        android:layout_width="110sp"
+        android:layout_height="35sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/help"
+        android:background="@drawable/click_button_max"
+        android:text="@string/exit" />
+
+    <Button
+        android:id="@+id/help"
+        style="@style/txt"
+        android:layout_width="110sp"
+        android:layout_height="35sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/opption"
+        android:background="@drawable/click_button_max"
+        android:text="@string/help" />
+
+    <Button
+        android:id="@+id/start"
+        style="@style/txt"
+        android:layout_width="110sp"
+        android:layout_height="35sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="26dp"
+        android:background="@drawable/click_button_max"
+        android:text="@string/start" />
+
+</RelativeLayout>
